@@ -1,0 +1,18 @@
+
+reset;
+
+model bra3.mod;
+
+option solver minos;
+
+option minos_options 'superbasics_limit=1000';
+
+solve;
+
+display {i in {0..n}} -y[i];
+display x;
+
+display {i in {0..n}} x[i] > result3_500.txt;
+display {i in {0..n}} 1 - y[i] > result3_500.txt;
+
+display total;

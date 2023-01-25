@@ -1,0 +1,21 @@
+
+reset;
+
+model bra2.mod;
+
+option solver minos;
+
+option minos_options 'superbasics_limit=1000';
+
+solve;
+
+#display x;
+#display {i in {0..n}} x[i] > result2_500.txt;
+
+#display total;
+
+for {i in 1..n} {
+	#print i;
+	print sqrt((((x[i] - x[i-1]) ** 2) + ((y[i] - y[i - 1]) ** 2)) / (2 * 9.81 * y[i - 1]));
+	#print (2 * 9.81 * y[i - 1]);
+}
