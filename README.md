@@ -22,3 +22,13 @@ The mathematical formalization corresponding to these three approaches of the pr
   <img src="https://user-images.githubusercontent.com/71564709/214545480-5cc5c8da-0708-4637-b1f6-916f8b275f24.png" width="700">
 </p>  
 
+
+## Use
+
+The files ```bra1.run, bra1.dat``` correspond to the formulation A, the files ```bra2.run, bra2.dat``` correspond to the formulation B and the files ```bra3.run, bra3.dat``` correspond to the formulation C. In the ```.run``` file it has to be determined a ```.txt``` file path where the results can be printed. These results, once run the ```.run``` file, can be imported to an excel file where they can be graphed, obtaining the optimal descent curve, an inverted cycloid. 
+
+
+## Authors
+
+Alessandro Valls Pau and Martí Batista Obiols
+
